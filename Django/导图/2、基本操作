@@ -1,0 +1,14 @@
+基本操作：1、设计表结构：班级表结构：表名：grades
+								 字段：班级名称：gname
+								 	  成立时间:gdate
+								 	  女生总数:ggirlnum
+								 	  男生总数:gboynum
+								 	  是否删除:isDelete
+
+					  学生表结构:表名：students
+					  			字段：姓名：sname 
+					  				 性别:sgender
+					  				 年龄:sage
+					  				 简介:scontend
+					  				 所属班级:sgrade
+					  				 是否删除:isDelete

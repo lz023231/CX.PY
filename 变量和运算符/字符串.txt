@@ -1,0 +1,86 @@
+什么是字符串？
+字符串是一单引号或双引号括起来的任意文本。
+创建字符串
+Str1 = “sunck is a good man! ”
+字符串运算：
+1字符串连接：str2 = “i am a good”
+              str3=”man!”
+　　      str4 = str2 + str3
+2输出重复字符串：str5 = “ok”
+              Str6 = str5*3
+3访问字符串的某一个字符：通过索引下标查找字符
+　　　　　　　Str7 = i am a good man!
+　　　　　　　Print(str7[0]) = i
+4截取字符串中一部分
+              str8 = "sdf sdlkfj sdkfj "
+              str9 = str8[4:6] #包含4，不包含6
+5判断字符串中是否含有某个字符
+            str1 = "ewrwer werwe"
+            print("good" in str1)
+            print("good" not in str1)
+6占位符
+    %d代表数字   %s代表字符串    %f代表浮点型  %.3f代表精确到小数点几位，并四舍五入
+    print("str = %s" % (str1))
+7转义字符:将一些字符转换成有特殊含义的字符，或者将有特殊含义的字符转换成普通字符
+   \n :换行   \t：制表符（默认\t前后的字符中间有空格）
+   打印多行时可以使用print('''
+                           ew
+                           ewr
+                           ''') 形式。
+  如果字符串里有很多字符串都需要转义，可以用r表示内部的字符串默认不转义
+8   eval（str）：将字符串str当成有效的表达式来求值并返回计算结果
+     num = eval("123") >>>>>>> num = 123 
+9  len(str) : 返回字符串的长度
+10 str.lower() :转换字符串中大写字母为小写字母
+11 str.upper() :转换字符串中小写字母为大写字母
+12 str.swapcase() :将大写字母换为小写字母，大写字母换为大写字母
+13 str.capitalize() :首字母大写，其他字母小写
+14 str.title() :字符串中每个单词的首字母大写
+15 str.center(width,fillchar) :
+   print(str.center(40,"*"))  在字符串str前后加入“*”使得字符串变为长40
+16 str.rjust(width,fillchar)  在字符串str右边加入“*”使得字符串变为长40
+17 str.ljust(width,fillchar)  在字符串str左边加入“*”使得字符串变为长40
+18 str.zfill(width)           在字符串str左边加入“0”使得字符串变为长40
+19 str1.count(str2[,start][,end]) 返回从下标start到end的str1中含有str2的数量，默认从头到尾
+                 print(str.count("good",12,len(str)))
+20 str1.find(str2[,start][,end]) 从左向右检测str2是否包含在str1中 ，可以指定范围，默认从头到尾
+得到的是第一次出现的开始下标，如果没有，则返回-1
+21 str1.find(str2[,start][,end]) 从右向左检测str2是否包含在str1中 ，可以指定范围，默认从头到尾
+得到的是第一次出现的开始下标，如果没有，则返回-1
+22 str.index(str,start=0,end=len(str))  根find一样，只不过没有找到时，会报错
+23 str.rindex(str,start=0,end=len(str))  根rfind一样，只不过没有找到时，会报错
+24 str1.lstrip(str2)  截掉字符串左侧的字符，默认为空格
+25 str1.rstrip(str2)  截掉字符串右侧的字符，默认为空格
+26 str1.strip（str2） 截掉字符串左侧和右侧的字符，默认为空格
+27 str1.split(str=""，num):以str为分隔符截取字符串，如果指定num则仅截取num个字符串
+28 str.splitlines（keepends）  按照（\r, \r\n, \n）分隔，若keepends == true，会保留换行符
+29 list = ['dfs','erwr','erwe','eewrwer']
+   str = " ".join(list)                     #将列表里的元素组成字符串，分割符为双引号之间的元素，这里为空格
+30 str.replace("new","old",num)      用new替换old，如果指定了num，则只替换前num个
+31 # 创建字符串映射表 
+ t46 = str.maketrans("ac","65")
+#  a对应6，c对应5
+ str = "wer wer werte te wer "
+ str1 = str.translate(t46)
+32 str.startwith(""，start，end)  判断字符串是以什么开头，默认为从开头到结尾
+33 str.endwith("",start,end)     判断字符串以什么结尾，默认为从开头到结尾
+
+34 str.encode("编码格式")#编码
+35 str.decode（"编码格式"）# 解码，要与编码格式一致		
+36 str.isalpha()#如果字符串中至少有一个字符且所有字符都是字母，返回true，否则返回false
+   str.isalnum()#若果字符串中至少有一个字符，且所有的字符都是数字和字母返回true你否则返回false
+   str.isupper()#若果字符串中至少有一个英文字符，且所有的字符都是大写的英文字母返回true，否则返回fal
+   str.islower()#若果字符串中至少有一个英文字符，且所有的字符都是小写的英文字母返回true你否则返回fal
+   str.istitle()#如果字符串是标题化（单词的首字母大写）的返回true，否则返回false
+   str.isdigit()#如果字符串只包含数字字符，返回true，否则返回false
+   str.isnumeric()#同上
+   str.isdecimal()#字符串只包含十进制字符，返回true
+   str.isspace() #若果字符串中只包含空格，返回true，否则返回false
+
+
+
+
+
+
+
+     

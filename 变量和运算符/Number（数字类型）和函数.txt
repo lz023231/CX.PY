@@ -1,0 +1,37 @@
+数字类型的分类：整数，浮点数，复数。
+整数：Python可以处理任意大小的整数，当然包括复整数，在程序中的表示和数学的写法一样。
+
+浮点数：由整数部分和小数部分组成，但是可能会有四舍五入的误差。
+
+复数：由实数部分和虚数部分组成的。
+
+数字类型转换：print（int（1.1））
+	      print（float（1））
+              print（int"123"）
+              print(float("12.3 "))
+              print (int("+123"))
+              print (int("-123"))
+
+
+函数：
+       import math（导入数学库）
+
+      print（math.floor(222.3)）# 向下取整
+
+      import random（导入随机数库）
+      print（random.choice([1,3,4,5,"aa"])）# 取随机数
+      print(randdom.randrange(1,100,2))     # 随机取1~100之间的数，步数为2，1包含
+      在内，100不包含在内。
+      
+      #生成[0,1)之间的随机数
+      print(random.random())
+
+     
+      #将序列的所有元素随机排序
+      list = [1,2,3,4,5]
+      random.shuffle(list)
+      print(list)
+      #随机生成一个实数，[3,9]范围内
+      print(random.uniform(3,9))	   
+      
+
